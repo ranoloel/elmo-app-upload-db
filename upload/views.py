@@ -28,3 +28,7 @@ def index(request):
         'images': UploadedImage.objects.all
     }
     return render(request, 'index.html', context=context)
+
+
+def Mapping(request):
+    return render(request, "mapping.html")
